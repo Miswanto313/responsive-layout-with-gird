@@ -1,0 +1,196 @@
+html,
+head, 
+body {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    background-color: gainsboro;
+    padding: 5px;
+}
+
+header {
+    border: 2px solid goldenrod;
+    background: cadetblue;
+    width: auto;
+    max-height: 100px;
+    grid-template-columns: 0.25fr 3.75fr;
+    display: grid;
+    gap: 5px;
+}
+
+.logo {
+    border: 2px solid black;
+    height: 80px;
+    margin: 5px 0 5px 5px;
+    background: blueviolet;
+}
+
+.name-com {
+    border: 2px solid black;
+    margin: 5px 5px 5px 0;
+    background: blueviolet;
+}
+ 
+p {
+    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+nav {
+    border: 2px solid black;
+    background: blueviolet;
+    width: auto;
+    margin-top: 5px;
+    text-align: left;
+}
+
+ul {
+    gap: 5px;
+    display: inline-flex;
+    margin-left: 0;
+    margin-block-start: 5px;
+    margin-block-end:5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 5px;
+}
+
+li {
+    width: 90px;
+    height: auto;
+    background: wheat;
+    text-align: center;
+    padding: 5px;
+    list-style-type: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border: 2px solid black;
+    background: cadetblue;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+section {
+    padding: 10px;
+    border: 2px solid black;
+    background: burlywood;
+    display: grid;
+    height: auto;
+    gap: 10px;
+}
+
+.asside{
+    margin-left: 5px;
+    border: 2px solid black;
+    background: blueviolet;
+}
+
+.content {
+    height: 250px;
+    background: blueviolet;
+    padding: 5px;
+}
+
+.team {
+    height: 200px;
+    border: 2px solid black;
+    background: blueviolet;
+    margin-top: 5px;
+}
+
+footer {
+    margin-top: 5px;
+    padding: 5px;
+    height: auto;
+    width: auto;
+    border: 2px solid black;
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.footer-note {
+    border: 2px solid black;
+    background-color: blueviolet;
+    height: 70px;
+}
+
+@media (max-width: 550px) {
+    header {
+        grid-template-columns: 0.25fr 3.75fr;
+        display: grid;
+        max-height: 50px;
+        height: auto;
+        padding: 5px;
+    }
+
+    .logo {
+        height: 3em;
+        width: 3em;
+        margin: 0;
+    }
+    
+    p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-size: 10px;
+    }
+
+    .name-com {
+        margin: 0;
+        width: auto;
+    }
+
+    ul {
+        grid-gap: 5px;
+    }
+
+    li {
+        width: 30px;
+        font-size: 10px;
+        padding: 5px;
+        width: auto;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+
+    .asside {
+        margin-left: 0;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 551px) {
+    .logo {
+        width: 5em;
+    }
+}
+
+@media (max-width: 700ppx) {
+    main {
+        min-height: 1000px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
